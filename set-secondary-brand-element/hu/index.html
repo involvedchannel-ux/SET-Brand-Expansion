@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SET Márka irányelvek – Szekunder márkaelem szabályok">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>SET – Szekunder márkaelem szabályok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #F2004A;
+      --black: #1A2029;
+      --gray: #595A68;
+      --light-gray: #EDEEEF;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11pt;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--black);
+      background: var(--white);
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 2.5rem 4rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 35%;
+      height: 50%;
+      background: linear-gradient(135deg, transparent 70%, rgba(242, 0, 74, 0.04) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    main, header {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--gray);
+      font-style: italic;
+      margin-bottom: 3rem;
+    }
+
+    .doc-header {
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .lang-switcher {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+
+    .lang-switcher a {
+      color: var(--gray);
+      text-decoration: none;
+    }
+
+    .lang-switcher a:hover {
+      color: var(--red);
+    }
+
+    .lang-switcher a.active {
+      color: var(--black);
+    }
+
+    .lang-switcher span {
+      color: var(--light-gray);
+      margin: 0 0.35rem;
+    }
+
+    .doc-header .brand-strip {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-header .section-num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--black);
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--red);
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h2 .section-num {
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--gray);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--red);
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      padding-left: 0.75rem;
+      border-left: 2px solid var(--red);
+    }
+
+    .section-block:first-of-type h4 {
+      margin-top: 1rem;
+    }
+
+    .section-close {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--gray);
+      font-style: italic;
+      margin-top: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    p + p {
+      margin-top: -0.25rem;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    th {
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray);
+      width: 30%;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1.5rem 1.75rem;
+      background: var(--black);
+      color: var(--white);
+      border-left: 2px solid var(--red);
+      font-size: 0.95rem;
+    }
+
+    blockquote strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+    }
+
+    .image-placeholder {
+      margin: 1.5rem 0;
+      background: var(--light-gray);
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid rgba(26, 32, 41, 0.08);
+      border-radius: 2px;
+    }
+
+    .image-placeholder img {
+      max-width: 100%;
+      max-height: 320px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .image-placeholder.optional {
+      min-height: 120px;
+    }
+
+    .image-caption {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--gray);
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .callout-label {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .color-swatches-inline {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .color-swatch {
+      width: 48px;
+      height: 48px;
+      border-radius: 2px;
+      border: 1px solid rgba(26, 32, 41, 0.15);
+      flex-shrink: 0;
+    }
+
+    .color-pairing-preview {
+      position: relative;
+      width: 80px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .pairing-swatch {
+      position: absolute;
+      border-radius: 2px;
+      border: 1px solid rgba(26, 32, 41, 0.1);
+    }
+
+    .pairing-red {
+      width: 70px;
+      height: 50px;
+      background: #F2004A;
+      top: 0;
+      left: 0;
+    }
+
+    .pairing-black {
+      width: 50px;
+      height: 35px;
+      background: #1A2029;
+      top: 15px;
+      left: 25px;
+    }
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body::before {
+        opacity: 0.5;
+      }
+
+      body {
+        padding: 2rem 2.5rem 3rem !important;
+        max-width: none;
+        font-size: 10pt;
+      }
+
+      .image-placeholder img {
+        max-height: 360px;
+      }
+    }
+
+    @page {
+      size: 210mm 50000mm;
+      margin: 25mm;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <header class="doc-header">
+      <nav class="lang-switcher">
+        <a href="../">EN</a><span>|</span><a href="../ro/">RO</a><span>|</span><a href="index.html" class="active">HU</a>
+      </nav>
+      <p class="brand-strip">SET</p>
+      <p class="section-num">Márka bővítés – szekunder elem, logó felújítás, színfrissítés</p>
+      <h1>Szekunder márkaelem szabályok</h1>
+      <p class="subtitle">Kiegészítés a meglévő márkakönyvhöz – a márka jelenlétének bővítése ezzel a szekunder elemével. Koborking studio.</p>
+    </header>
+
+    <section>
+      <h2><span class="section-num">01</span> Kontextus és amit hozzáadunk</h2>
+      <p>A korábbi identitásmunka sok al-márkát és kiterjedt irányelveket hozott létre, de nem alakított ki elkülönülő, egységes jelenlétet a polcon vagy a gyakorlatban. A címkék végül hasonlóan néztek ki a termékek között; az irányelvek valós hatása gyenge volt.</p>
+      <p>Egy újabb teljes rebrand helyett – új logó, új tipográfia, új márkakönyv – bevezetünk egy <strong>szekunder márkaelemet</strong>: egy sarok/kocka formát, amely elismerést hordoz ott, ahol a logó önmagában nem képes. Ez a dokumentum meghatározza az elem szabályait és megközelítéseit, plusz egy enyhe logófelújítást és finomított márkaszínt. A tipográfia és a meglévő rendszer többi része változatlan marad.</p>
+      <p class="section-close">A következő egy tömör útmutató ezen változtatások következetes alkalmazásához minden érintkezési ponton.</p>
+    </section>
+
+    <section>
+      <h2><span class="section-num">02</span> Logó felújítás</h2>
+      <p>A logó <strong>felújítást</strong> kapott: finom belső vágások és térköz-beállítások. A lényeg, a szerkezet és a szójel marad. Nem új logó.</p>
+      <p>A cél az volt, hogy <strong>minden mérethez kalibráljuk a jelet</strong>. Most jól olvasható mind nagyon kicsi (címkék, ikonok), mind nagyon nagy (plakátok, jelzések) méretben. A legtöbb vásárló nem fogja észrevenni a változást. Nincs szükség piaci bejelentésre vagy a meglévő alkalmazások átdolgozására. A változások főleg hatalmas vagy nagyon kicsi méreteknél láthatók, ahol az igazítás és az optikai egyensúly a legfontosabb.</p>
+      <div class="image-placeholder">
+        <img src="../images/00-01_logo-before-after.jpg" alt="Logó felújítás előtt és után">
+      </div>
+      <p class="image-caption">A logó felújítás előtt és után, a belső vágások és térköz finomításait mutatva.</p>
+      <div class="image-placeholder">
+        <img src="../images/02-03_logo-small-size.jpg" alt="Logó kisméretben – eredeti vs felújított">
+      </div>
+      <p class="image-caption">A logó kisméretben, az eredeti és felújított verziók összehasonlítása a jobb olvashatóság bemutatására.</p>
+    </section>
+
+    <section>
+      <h2><span class="section-num">03</span> A sarokelem</h2>
+      <p>Ez a legfontosabb része a hozzájárulásunknak. A logó egy tipográfiai jel – kiolvasható belőle „SET”. A kocka lesz a <strong>legváltozatosabb és felismerhetőbb elem</strong>, amely a márkához kapcsolódik. Mindig jelen lesz valamilyen formában. Ez a szekció helyzet-specifikus megközelítéseket határoz meg, hogy az ügyfél jóváhagyja az irányt. Még nem írunk teljes márkakönyvet – azt jobb több gyakorlati példa után, címkék, plakátok és showroomok terén. A cél egy <strong>rendszer</strong>, amely a márka egyedi jelét viseli, bármilyen új helyzet is merüljön fel. Új felületek, formátumok vagy kontextusok jelenhetnek meg, amelyeket ma nem láthatunk előre; ez a rendszer lehetővé teszi az alkalmazkodást a felismerhetőség megőrzése mellett.</p>
+
+      <h3>Az alapgondolat</h3>
+      <p>„A sarkban élünk.” „Állítsd be jól a sarkot, és láthatatlanná válunk.” A szegélyprofilok és a lábazatok azok a részletek, amelyek befejezik a teret – láthatatlanok, ha jól készülnek, de hiányukban a tér befejezetlen marad. A kockajel magát a sarkot utánozza: a SET koncepciója, ahogy a sarkban él vagy elbújik. Ugyanabból az ötletből születik, akár egy szobában mutatjuk, akár egyedül.</p>
+
+      <h3>Helyzet-specifikus megközelítések</h3>
+      <p>A kocka a helyzethez alkalmazkodik. Az alábbiakban a fő kontextusok, amelyekkel dolgoztunk. Mindegyiknek más az alkalmazása, de ugyanaz a koncepció hajtja az egészet.</p>
+
+      <div class="section-block">
+        <h4>Ha van tér</h4>
+        <p> – 3D belső renderelések, fotózás, valódi showroomok (pl. IKEA-stílus, kiskereskedelem)</p>
+        <p>Bármely nézőpontból azonosíthatjuk a szoba három síkját, amelyek a sarkban találkoznak. A jelet forgatjuk, hogy illeszkedjen ehhez a szöghöz, és a kockát a középpontba helyezzük, ahol a három él találkozik.</p>
+        <p>Színes vonalakat húzunk (a márka vörösében) a három sík három éle mentén. Ezek a vonalak a kockánál találkoznak. Még ha a kocka kicsi is, a kiemelt élek a figyelmet felé irányítják – a kompozíció merész és feltűnő marad. A fő vizuális lehet fotó vagy 3D belső; a sarkkezelés továbbra is világosan olvasható.</p>
+        <p>Valódi showroomokban festhetjük az éleket és helyezhetünk el egy fizikai vörös kockát a sarkban. Ugyanaz az ötlet: egy főleg láthatatlan márkát emelünk ki, amely befejezi a teret, és nélküle a tér nem érezné magát olyan teljesnek.</p>
+        <div class="image-placeholder">
+          <img src="../images/04_SET-Brand-Mark.jpg" alt="A jel forgatása bármely szobaszöghöz">
+        </div>
+        <p class="image-caption">A kocka forgatható, hogy illeszkedjen bármely szobaszöghöz, a kocka a középpontban, ahol a három él találkozik.</p>
+        <div class="image-placeholder">
+          <img src="../images/10-11_SET-Application-Examples.jpg" alt="Sarkkezelés 3D renderelésekben">
+        </div>
+        <p class="image-caption">Sarkkezelés alkalmazva 3D belső renderelésekre, a kiemelt élekkel, amelyek a figyelmet a kocka felé irányítják.</p>
+        <p class="section-close">Ugyanaz a logika vonatkozik a fotózásra és valódi showroomokra: a sarok lesz a színpad.</p>
+      </div>
+
+      <div class="section-block">
+        <h4>Ha nincs tér</h4>
+        <p> – Plakátok, nyomtatás, big-box kiskereskedelem (pl. Lowes), versenytársak mellett</p>
+        <p>Itt a kockát egyedül vonjuk ki. Nincsenek szobavonalak – egyszerűbb forma, de ugyanaz az ötlet. A kocka saját szimbólummá válik és a nehéz munkát végzi.</p>
+        <p>Big-box kontextusban a versenytársak általában belsőt, szöveget és kis logót mutatnak. A mi megközelítésünk: tegyük a kockát óriásinak az előtérbe. Ez lesz a fő attrakció. Azonnali differenciálódás – merész, feltűnő és a sarkkoncepció közvetlen folytatása.</p>
+        <p>A belső lehet a háttérben vagy a kocka belsejében ablakként. Merészen mutatjuk a márkát, miközben még mindig belsőt mutatunk. Ez megold egy gyakorlati problémát: egyetlen lábazat vagy szegélyprofil nehezen tehető vizuálisan vonzóvá; a belsők eladják a kész otthon ötletét, de önmagukban nem egyediek.</p>
+        <div class="image-placeholder">
+          <img src="../images/05_SET-Brand-Mark.jpg" alt="A kocka önálló szimbólumként kivonva">
+        </div>
+        <p class="image-caption">A kocka önálló szimbólumként kivonva, kész a márka hordozására, ha nincs szobakontextus.</p>
+        <div class="image-placeholder">
+          <img src="../images/06-07_SET-Application-Examples.jpg" alt="Hero plakátok a kockával fő attrakcióként">
+        </div>
+        <p class="image-caption">Hero plakátok a kockával fő attrakcióként, azonnali differenciálódást teremtve big-box kiskereskedelmi kontextusban.</p>
+        <p class="section-close">Ezek a formátumok működnek vásárokon, kiskereskedelmi kirakatokon és digitális kampányokban.</p>
+      </div>
+
+      <div class="section-block">
+        <h4>Ha a tér korlátozott</h4>
+        <p> – Címkék, vékony formátumok (pl. szegélyprofilok, fejjel lefelé címkék)</p>
+        <p>Vékony címkéken szegélyprofilokhoz a logó gyakran megduplázódik (egy orientáció per él), hogy helyesen olvasható legyen, ha a termék fejjel lefelé van. A kocka szimbólumként jelenik meg – néha a szöveg előtt – de nem óriásinak, mert a címkének más információkat is mutatnia kell.</p>
+        <p>A kocka kivágott formaként szolgálhat fotókhoz a középen, és a logó mindkét szélen lehet. Ha két ilyen címke egymás mellett kerül, széleik együtt újra a kocka alakját alkotják. A rendszer lefelé skálázódik az ötlet elvesztése nélkül.</p>
+        <div class="image-placeholder">
+          <img src="../images/08_SET-Application-Examples.jpg" alt="Címke példák, kocka kivágásként és szimbólumként">
+        </div>
+        <p class="image-caption">Címkék szegélyprofilokhoz a kockával kivágásként fotóknak és szimbólumként a széleken.</p>
+        <p class="section-close">A rendszer lefelé skálázódik az ötlet elvesztése nélkül – két címke egymás mellett együtt alkotja a kockát.</p>
+      </div>
+
+      <h3>Mi marad következetes</h3>
+      <ul>
+        <li>A kocka mindig ugyanabból a koncepcióból származik: a sarok, a SET benne él, a részlet, amely befejezi a teret.</li>
+        <li>Ne: tegye a logót a kocka belsejébe; használja zajos mintaként vagy textúraként. A kockának mérnöki és építészeti érzést kell keltenie, nem dekoratívat.</li>
+        <li>Új helyzetek merülnek fel. A rendszer alkalmazkodásra lett tervezve – ugyanazt a logikát alkalmazzuk új formátumokra, felületekre vagy kontextusokra, hogy a márka egyedi jele mindig jelen legyen valamilyen formában.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="section-num">04</span> Szín</h2>
+      <p>Két elsődleges színt frissítünk a meglévő palettából: a fő vöröst és a fő feketét. A paletta többi része (másodlagos színek, világoskék, fehér stb.) az eredeti márkakönyvben meghatározottak szerint marad.</p>
+
+      <h3>Fő vörös (frissítve)</h3>
+      <div class="color-swatches-inline">
+        <div class="color-swatch" style="background: #F2004A;" title="#F2004A"></div>
+      </div>
+      <table>
+        <tr><th>Formátum</th><td>Érték</td></tr>
+        <tr><th>Hex</th><td>#F2004A</td></tr>
+        <tr><th>RGB</th><td>R 242, G 0, B 74</td></tr>
+        <tr><th>CMYK</th><td>C 0, M 100, Y 70, K 5</td></tr>
+      </table>
+      <p><em>Korábban: #FF0043 (Pantone 192 C).</em></p>
+      <p>Egy enyhe magentás eltolódás különbözteti meg a márkát a Vodafone vörösétől, amelyhez az előző szín nagyon hasonlított. Az új vörös megtartja ugyanazt az energiát és hatást, de egyértelműen a miénknek olvasható.</p>
+
+      <h3>Fő fekete (frissítve)</h3>
+      <div class="color-swatches-inline">
+        <div class="color-swatch" style="background: #1A2029;" title="#1A2029"></div>
+      </div>
+      <table>
+        <tr><th>Formátum</th><td>Érték</td></tr>
+        <tr><th>Hex</th><td>#1A2029</td></tr>
+        <tr><th>RGB</th><td>R 26, G 32, B 41</td></tr>
+        <tr><th>CMYK</th><td>C 37, M 22, Y 0, K 84</td></tr>
+      </table>
+      <p><em>Korábban: #212128 (Pantone Black 6 C).</em></p>
+      <p>Tiszta fekete helyett színezett sötétszürkét használunk – kékes sötét, amely a márka saját feketévé válik. Fehér alapon szövegben feketének olvasható; nagyobb háttérben a kék alaphang láthatóvá válik és személyiséget ad. Megakadályozza, hogy a száraz dokumentumok (online vagy nyomtatott) laposnak érezzék magukat, és finom, de felismerhető karaktert ad a márkának még semleges elrendezésekben is.</p>
+
+      <div class="color-pairing-preview">
+        <div class="pairing-swatch pairing-red"></div>
+        <div class="pairing-swatch pairing-black"></div>
+      </div>
+      <blockquote>
+        <strong class="callout-label">Gyakorlatban</strong> – Ezek a finom árnyalati változások egyedi párosítást teremtenek. Még semmi mással – más színek, fotó nélkül – csak a két szín egymásra rétegelve, különálló vibráló kontrasztot produkálnak. Az egyidejű kontrasztra támaszkodik: elég kontraszt az olvasáshoz, de nem elég, hogy a háttér eltűnjön. A hatás azon a határvonalon ül és finom pszichológiát érint – perifériás látásban észlelve újranézésre késztethet.
+      </blockquote>
+
+      <div class="image-placeholder optional">
+        <img src="../images/color-swatches.jpg" alt="A fő vörös és fekete semleges háttéren">
+      </div>
+      <p class="image-caption">A fő vörös és fekete semleges háttéren.</p>
+    </section>
+
+    <section>
+      <h2><span class="section-num">05</span> Tipográfia</h2>
+      <p>A márka meglévő tipográfiája változatlan marad. Megtartjuk a jelenlegi betűtípusokat, súlyokat és hierarchiát az eredeti identitás és márkakönyv szerint. Ez a dokumentum nem vezet be új betűtípusokat vagy új tipográfiai rendszert; a szekunder sarok/kocka elemre, a logó felújításra és a frissített színre összpontosít.</p>
+      <p>Alkalmazásokban a tipográfiának folytatnia kell azt, amit jól csinál: világos hierarchiát és olvashatóságot biztosít. Az új sarok/kocka elem a tipográfia mellett áll – a címsorok és a törzsszöveg ugyanazokhoz a rácsokhoz és margókhoz igazodnak, mint korábban – így a márka fejlődöttnek, nem újra feltaláltnak érződik.</p>
+      <p class="section-close">A sarokelemmel és a frissített színekkel együtt a tipográfia egyetlen, felismerhető rendszert támogat.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SET Ghiduri de brand – Reguli pentru elementul secundar">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>SET – Reguli pentru elementul secundar de brand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #F2004A;
+      --black: #1A2029;
+      --gray: #595A68;
+      --light-gray: #EDEEEF;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11pt;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--black);
+      background: var(--white);
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 2.5rem 4rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 35%;
+      height: 50%;
+      background: linear-gradient(135deg, transparent 70%, rgba(242, 0, 74, 0.04) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    main, header {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--gray);
+      font-style: italic;
+      margin-bottom: 3rem;
+    }
+
+    .doc-header {
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .lang-switcher {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+
+    .lang-switcher a {
+      color: var(--gray);
+      text-decoration: none;
+    }
+
+    .lang-switcher a:hover {
+      color: var(--red);
+    }
+
+    .lang-switcher a.active {
+      color: var(--black);
+    }
+
+    .lang-switcher span {
+      color: var(--light-gray);
+      margin: 0 0.35rem;
+    }
+
+    .doc-header .brand-strip {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-header .section-num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--black);
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--red);
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h2 .section-num {
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--gray);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--red);
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      padding-left: 0.75rem;
+      border-left: 2px solid var(--red);
+    }
+
+    .section-block:first-of-type h4 {
+      margin-top: 1rem;
+    }
+
+    .section-close {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--gray);
+      font-style: italic;
+      margin-top: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    p + p {
+      margin-top: -0.25rem;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    th {
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray);
+      width: 30%;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1.5rem 1.75rem;
+      background: var(--black);
+      color: var(--white);
+      border-left: 2px solid var(--red);
+      font-size: 0.95rem;
+    }
+
+    blockquote strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+    }
+
+    .image-placeholder {
+      margin: 1.5rem 0;
+      background: var(--light-gray);
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid rgba(26, 32, 41, 0.08);
+      border-radius: 2px;
+    }
+
+    .image-placeholder img {
+      max-width: 100%;
+      max-height: 320px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .image-placeholder.optional {
+      min-height: 120px;
+    }
+
+    .image-caption {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--gray);
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .callout-label {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .color-swatches-inline {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .color-swatch {
+      width: 48px;
+      height: 48px;
+      border-radius: 2px;
+      border: 1px solid rgba(26, 32, 41, 0.15);
+      flex-shrink: 0;
+    }
+
+    .color-pairing-preview {
+      position: relative;
+      width: 80px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .pairing-swatch {
+      position: absolute;
+      border-radius: 2px;
+      border: 1px solid rgba(26, 32, 41, 0.1);
+    }
+
+    .pairing-red {
+      width: 70px;
+      height: 50px;
+      background: #F2004A;
+      top: 0;
+      left: 0;
+    }
+
+    .pairing-black {
+      width: 50px;
+      height: 35px;
+      background: #1A2029;
+      top: 15px;
+      left: 25px;
+    }
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body::before {
+        opacity: 0.5;
+      }
+
+      body {
+        padding: 2rem 2.5rem 3rem !important;
+        max-width: none;
+        font-size: 10pt;
+      }
+
+      .image-placeholder img {
+        max-height: 360px;
+      }
+    }
+
+    @page {
+      size: 210mm 50000mm;
+      margin: 25mm;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <header class="doc-header">
+      <nav class="lang-switcher">
+        <a href="../">EN</a><span>|</span><a href="index.html" class="active">RO</a><span>|</span><a href="../hu/">HU</a>
+      </nav>
+      <p class="brand-strip">SET</p>
+      <p class="section-num">Extindere brand – element secundar, refacere logo, actualizare culori</p>
+      <h1>Reguli pentru elementul secundar de brand</h1>
+      <p class="subtitle">O adăugare la ghidul de brand existent – o extindere a prezenței brandului prin acest element secundar. De Koborking studio.</p>
+    </header>
+
+    <section>
+      <h2><span class="section-num">01</span> Context și ce adăugăm</h2>
+      <p>Lucrarea anterioară de identitate a produs multe sub-branduri și ghiduri extinse, dar nu a creat o prezență distinctă și unitară pe raft sau în practică. Etichetele au ajuns să arate similar la toate produsele; efectul real al ghidurilor a fost slab.</p>
+      <p>În loc de un alt rebrand complet – un logo nou, tipografie nouă, un alt ghid de brand – introducem un <strong>element secundar de brand</strong>: o formă de colț/cub care poartă recunoașterea acolo unde logo-ul singur nu poate. Acest document stabilește regulile și abordările pentru acel element, plus o ușoară refacere a logo-ului și o culoare de brand rafinată. Tipografia și restul sistemului existent rămân neschimbate.</p>
+      <p class="section-close">Ce urmează este un ghid concis pentru aplicarea acestor modificări în mod consecvent între toate punctele de contact.</p>
+    </section>
+
+    <section>
+      <h2><span class="section-num">02</span> Refacerea logo-ului</h2>
+      <p>Logo-ul a primit o <strong>refacere</strong>: tăieturi interne subtile și ajustări de spațiere. Esența, structura și cuvântul rămân aceleași. Nu este un logo nou.</p>
+      <p>Obiectivul a fost să <strong>calibrăm semnul pentru toate dimensiunile</strong>. Acum se citește bine atât la dimensiuni foarte mici (etichete, icoane) cât și foarte mari (postere, semne). Majoritatea clienților nu vor observa schimbarea. Nu este nevoie de anunț pe piață sau de refacere a aplicațiilor existente. Schimbările sunt vizibile în special la dimensiuni uriașe sau foarte mici, unde alinierea și echilibrul optic contează cel mai mult.</p>
+      <div class="image-placeholder">
+        <img src="../images/00-01_logo-before-after.jpg" alt="Logo înainte și după refacere">
+      </div>
+      <p class="image-caption">Logo-ul înainte și după refacere, cu rafinamentele subtile ale tăieturilor interne și spațierii.</p>
+      <div class="image-placeholder">
+        <img src="../images/02-03_logo-small-size.jpg" alt="Logo la dimensiune mică – original vs refacere">
+      </div>
+      <p class="image-caption">Logo-ul la dimensiune mică, comparând versiunile originală și refăcută pentru o lizibilitate îmbunătățită.</p>
+    </section>
+
+    <section>
+      <h2><span class="section-num">03</span> Elementul colțului</h2>
+      <p>Aceasta este partea cea mai importantă a contribuției noastre. Logo-ul este un semn tipografic – scrie „SET”. Cubul devine <strong>cel mai versatil și recognoscibil element</strong> asociat cu brandul. Va fi mereu prezent într-o formă sau alta. Această secțiune stabilește abordări situaționale pentru ca clientul să aprobe direcția. Nu scriem încă un ghid complet de brand – asta e mai bine făcut după ce avem mai multe exemple practice în etichete, postere și showroom-uri. Obiectivul este un <strong>sistem</strong> care poartă semnul unic al brandului indiferent de situațiile noi care apar. Suprafețe, formate sau contexte noi pot apărea pe care nu le putem prevedea astăzi; acest sistem ne permite să ne adaptăm păstrând recognoscibilitatea.</p>
+
+      <h3>Ideea de bază</h3>
+      <p>„Trăim în colț.” „Fă colțul corect și devenim invizibili.” Profilele de margine și plinturile sunt detaliul care finalizează un spațiu – invizibile când sunt făcute corect, dar absența lor lasă spațiul neterminat. Semnul cubului imită colțul în sine: conceptul SET care trăiește sau se ascunde în colț. Se naște din aceeași idee fie că îl arătăm într-o cameră sau singur.</p>
+
+      <h3>Abordări situaționale</h3>
+      <p>Cubul se adaptează la situație. Mai jos sunt principalele contexte cu care am lucrat. Fiecare are o aplicare diferită, dar același concept conduce totul.</p>
+
+      <div class="section-block">
+        <h4>Când există spațiu</h4>
+        <p> – Randări 3D de interioare, fotografie, showroom-uri reale (ex. stil Ikea, retail)</p>
+        <p>Din orice unghi de vedere, putem identifica cele trei plane ale unei camere care se întâlnesc în colț. Rotim semnul pentru a se potrivi cu acel unghi și plasăm cubul în centru unde trei muchii se întâlnesc.</p>
+        <p>Trasăm linii colorate (în roșul brandului) de-a lungul celor trei muchii ale celor trei plane. Aceste linii se întâlnesc la cub. Chiar dacă cubul e mic, muchiile evidențiate atrag atenția spre el – compoziția rămâne puternică și impactantă. Imaginea principală poate fi o fotografie sau interior 3D; tratamentul colțului rămâne clar.</p>
+        <p>În showroom-uri reale, putem vopsi muchiile și plasa un cub roșu fizic în colț. Aceeași idee: evidențiem un brand care e în mare parte invizibil și face spațiul complet, iar fără el spațiul nu s-ar simți la fel de complet.</p>
+        <div class="image-placeholder">
+          <img src="../images/04_SET-Brand-Mark.jpg" alt="Rotirea semnului pentru a se potrivi cu orice unghi">
+        </div>
+        <p class="image-caption">Cubul poate fi rotit pentru a se potrivi cu orice unghi al camerei, cu cubul plasat în centru unde cele trei muchii se întâlnesc.</p>
+        <div class="image-placeholder">
+          <img src="../images/10-11_SET-Application-Examples.jpg" alt="Tratament aplicat în randări 3D">
+        </div>
+        <p class="image-caption">Tratament aplicat în randări 3D de interioare, cu muchiile evidențiate atrăgând atenția spre cub.</p>
+        <p class="section-close">Aceeași logică se aplică fotografiei și showroom-urilor reale: colțul devine scena.</p>
+      </div>
+
+      <div class="section-block">
+        <h4>Când nu există spațiu</h4>
+        <p> – Postere, print, retail big-box (ex. Lowes), alături de competitori</p>
+        <p>Aici extragem cubul singur. Fără linii de cameră – o formă mai simplă, dar aceeași idee. Cubul devine propriul simbol și face treaba grea.</p>
+        <p>În context big-box, competitorii arată de obicei un interior, ceva text și un logo mic. Abordarea noastră: punem cubul uriaș în față. Devine atracția principală. Diferențiere instantanee – puternic, impactant și o continuare directă a conceptului de colț.</p>
+        <p>Interiorul poate sta în fundal sau în interiorul cubului ca o fereastră. Arătăm brandul cu bold în timp ce tot arătăm un interior. Asta rezolvă o problemă practică: o singură plintă sau profil de margine e greu de făcut vizual convingător; interioarele vând ideea unei case terminate dar nu sunt unice singure.</p>
+        <div class="image-placeholder">
+          <img src="../images/05_SET-Brand-Mark.jpg" alt="Cubul extras ca simbol independent">
+        </div>
+        <p class="image-caption">Cubul extras ca simbol independent, gata să poarte brandul când nu există context de cameră.</p>
+        <div class="image-placeholder">
+          <img src="../images/06-07_SET-Application-Examples.jpg" alt="Postere cu cubul ca atracție principală">
+        </div>
+        <p class="image-caption">Postere cu cubul ca atracție principală, creând diferențiere instantanee în context retail big-box.</p>
+        <p class="section-close">Aceste formate funcționează la târguri, expoziții retail și campanii digitale.</p>
+      </div>
+
+      <div class="section-block">
+        <h4>Când spațiul e limitat</h4>
+        <p> – Etichete, formate subțiri (ex. profile de margine, etichete în poziție inversă)</p>
+        <p>Pe etichete subțiri pentru profile de margine, logo-ul e adesea dublat (o orientare per muchie) ca să se citească corect când produsul e cu capul în jos. Cubul apare ca simbol – uneori înainte de text – dar nu uriaș, pentru că eticheta trebuie să arate alte informații.</p>
+        <p>Cubul poate servi ca formă decupată pentru fotografii în mijloc, iar logo-ul poate sta pe ambele muchii. Când două astfel de etichete sunt plasate una lângă alta, muchiile lor formează împreună din nou forma cubului. Sistemul se scalează fără să piardă ideea.</p>
+        <div class="image-placeholder">
+          <img src="../images/08_SET-Application-Examples.jpg" alt="Exemple de etichete, cub ca decupaj și simbol">
+        </div>
+        <p class="image-caption">Etichete pentru profile de margine cu cubul ca decupaj pentru fotografii și ca simbol pe muchii.</p>
+        <p class="section-close">Sistemul se scalează fără să piardă ideea – două etichete una lângă alta pot forma cubul împreună.</p>
+      </div>
+
+      <h3>Ce rămâne constant</h3>
+      <ul>
+        <li>Cubul vine mereu din același concept: colțul, SET trăind în el, detaliul care finalizează un spațiu.</li>
+        <li>Nu: pune logo-ul în interiorul cubului; folosește-l ca model sau textură aglomerată. Cubul ar trebui să pară ingineresc și arhitectural, nu decorativ.</li>
+        <li>Vor apărea situații noi. Sistemul e conceput să se adapteze – aplicăm aceeași logică la formate, suprafețe sau contexte noi, astfel încât semnul unic al brandului să fie mereu prezent într-o formă sau alta.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="section-num">04</span> Culoare</h2>
+      <p>Actualizăm două culori primare din paleta existentă: roșul principal și negrul principal. Restul paletei (culori secundare, albastru deschis, alb etc.) rămâne conform ghidului de brand original.</p>
+
+      <h3>Roșu principal (actualizat)</h3>
+      <div class="color-swatches-inline">
+        <div class="color-swatch" style="background: #F2004A;" title="#F2004A"></div>
+      </div>
+      <table>
+        <tr><th>Format</th><td>Valoare</td></tr>
+        <tr><th>Hex</th><td>#F2004A</td></tr>
+        <tr><th>RGB</th><td>R 242, G 0, B 74</td></tr>
+        <tr><th>CMYK</th><td>C 0, M 100, Y 70, K 5</td></tr>
+      </table>
+      <p><em>Anterior: #FF0043 (Pantone 192 C).</em></p>
+      <p>O ușoară deplasare spre magenta diferențiază brandul de roșul Vodafone, pe care culoarea anterioară îl semăna foarte mult. Noul roșu păstrează aceeași energie și impact dar se citește ca distinct al nostru.</p>
+
+      <h3>Negru principal (actualizat)</h3>
+      <div class="color-swatches-inline">
+        <div class="color-swatch" style="background: #1A2029;" title="#1A2029"></div>
+      </div>
+      <table>
+        <tr><th>Format</th><td>Valoare</td></tr>
+        <tr><th>Hex</th><td>#1A2029</td></tr>
+        <tr><th>RGB</th><td>R 26, G 32, B 41</td></tr>
+        <tr><th>CMYK</th><td>C 37, M 22, Y 0, K 84</td></tr>
+      </table>
+      <p><em>Anterior: #212128 (Pantone Black 6 C).</em></p>
+      <p>În loc de negru pur, folosim un gri închis colorat – un întunecat albăstrui care devine negrul propriu al brandului. Pe text peste alb, se citește ca negru; pe fundaluri mai mari, nuanța albastră devine vizibilă și adaugă personalitate. Păstrează documentele sec (online sau print) de la a părea plate și dă brandului un caracter subtil dar recognoscibil chiar și în layout-uri neutre.</p>
+
+      <div class="color-pairing-preview">
+        <div class="pairing-swatch pairing-red"></div>
+        <div class="pairing-swatch pairing-black"></div>
+      </div>
+      <blockquote>
+        <strong class="callout-label">În practică</strong> – Aceste schimbări subtile în nuanță creează o pereche unică. Chiar cu nimic altceva – fără alte culori, fără fotografie – doar cele două culori suprapuse, produc un contrast vibrant distinct. Se bazează pe contrastul simultan: suficient contrast pentru citire, dar nu suficient ca fundalul să dispară. Efectul stă pe acea linie și atinge o psihologie subtilă – când observat în vederea periferică, poate face oamenii să se uite din nou.
+      </blockquote>
+
+      <div class="image-placeholder optional">
+        <img src="../images/color-swatches.jpg" alt="Culorile principale pe fundal neutru">
+      </div>
+      <p class="image-caption">Roșul și negrul principal pe fundal neutru.</p>
+    </section>
+
+    <section>
+      <h2><span class="section-num">05</span> Tipografie</h2>
+      <p>Tipografia existentă a brandului rămâne neschimbată. Păstrăm fonturile, greutățile și ierarhia curente conform identității și ghidului de brand original. Acest document nu introduce fonturi noi sau un sistem tipografic nou; se concentrează pe elementul secundar colț/cub, refacerea logo-ului și culoarea actualizată.</p>
+      <p>În aplicații, tipografia ar trebui să continue să facă ce face deja bine: să ofere ierarhie clară și lizibilitate. Noul element colț/cub stă alături de tipografie – titlurile și textul se aliniază la aceleași grile și margini ca înainte – astfel brandul se simte evoluat, nu reinventat.</p>
+      <p class="section-close">Împreună cu elementul colț și culorile actualizate, tipografia susține un sistem unic, recognoscibil.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
