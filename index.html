@@ -356,7 +356,7 @@
     }
 
     @page {
-      size: 210mm 3000mm;
+      size: 210mm 297mm;
       margin: 25mm;
     }
   </style>
@@ -509,5 +509,26 @@
 
   </main>
 
+  <script>
+    (function() {
+      var BOTTOM_PADDING_PX = 20;
+      var PX_TO_MM = 25.4 / 96;
+      function setPrintPageHeight() {
+        var heightPx = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight) + BOTTOM_PADDING_PX;
+        var heightMm = Math.round(heightPx * PX_TO_MM);
+        heightMm = Math.min(5000, Math.max(400, heightMm));
+        var style = document.getElementById('print-page-size');
+        if (!style) {
+          style = document.createElement('style');
+          style.id = 'print-page-size';
+          document.head.appendChild(style);
+        }
+        style.textContent = '@media print { @page { size: 210mm ' + heightMm + 'mm; margin: 25mm; } }';
+      }
+      window.addEventListener('beforeprint', setPrintPageHeight);
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setPrintPageHeight);
+      else setPrintPageHeight();
+    })();
+  </script>
 </body>
 </html>
